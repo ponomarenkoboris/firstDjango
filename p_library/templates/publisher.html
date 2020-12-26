@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <title>Django HW-D4.10</title>
+</head>
+<body>
+  
+    <table class="table table-dark">
+      <thead>
+        <tr>
+          <th scope="col">Publishing House</th>
+          <th scope="col">Book title</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for publish in publisher %}
+          <tr>
+            <td>{{ publish.publishing_house }}</td>
+            <td>{{ publish.books }}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+</body>
+</html>

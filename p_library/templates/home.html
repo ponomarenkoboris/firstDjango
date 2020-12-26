@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+</head>
+<body>
+    <div>
+        <h1>This is My home page Django!</h1>
+        {% for texts in text %}
+            {{ texts.title }} - <b>this is {{ texts.author }}</b><br>
+        {% endfor %}
+    </div>
+    <div>
+        {% for publish in publisher %}
+            {{ publish.publishing_house }}
+        {% endfor %}
+    </div>
+    
+</body>
+</html>
